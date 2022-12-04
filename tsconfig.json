@@ -19,11 +19,11 @@
       "dom"
     ],
     "paths": {
-      "pip-webui2-buttons": [
-        "dist/pip-webui2-buttons"
+      "pip-webui-buttons-ngx": [
+        "dist/pip-webui-buttons-ngx"
       ],
-      "pip-webui2-buttons/*": [
-        "dist/pip-webui2-buttons/*"
+      "pip-webui-buttons-ngx/*": [
+        "dist/pip-webui-buttons-ngx/*"
       ]
     }
   }

@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { PipActionListModule } from 'pip-webui2-buttons';
+import { PipActionListModule } from 'pip-webui-buttons-ngx';
 
 import { ActionListExampleComponent } from './action-list-example.component';
 
@@ -14,16 +14,8 @@ describe('ActionListExampleComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ActionListExampleComponent],
-      imports: [
-        CommonModule,
-        FlexLayoutModule,
-        MatButtonModule,
-        MatIconModule,
-
-        PipActionListModule
-      ]
-    })
-      .compileComponents();
+      imports: [CommonModule, FlexLayoutModule, MatButtonModule, MatIconModule, PipActionListModule],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

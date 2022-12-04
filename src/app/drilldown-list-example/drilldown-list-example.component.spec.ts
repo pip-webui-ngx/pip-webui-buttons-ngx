@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { PipDrilldownListModule } from 'pip-webui2-buttons';
+import { PipDrilldownListModule } from 'pip-webui-buttons-ngx';
 
 import { DrilldownListExampleComponent } from './drilldown-list-example.component';
 
@@ -13,15 +13,8 @@ describe('DrilldownListExampleComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [DrilldownListExampleComponent],
-      imports: [
-        CommonModule,
-        MatButtonModule,
-        MatIconModule,
-
-        PipDrilldownListModule
-      ],
-    })
-      .compileComponents();
+      imports: [CommonModule, MatButtonModule, MatIconModule, PipDrilldownListModule],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

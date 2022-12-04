@@ -1,0 +1,14 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/pip-webui-buttons-ngx",
+  "lib": {
+    "entryFile": "src/public_api.ts"
+  },
+  "assets": [
+    {
+      "input": "src",
+      "glob": "**/*.scss",
+      "output": ""
+    }
+  ]
+}

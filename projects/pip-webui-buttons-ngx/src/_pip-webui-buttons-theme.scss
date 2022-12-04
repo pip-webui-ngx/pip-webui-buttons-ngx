@@ -1,0 +1,13 @@
+@use 'sass:map';
+@use 'node_modules/@angular/material' as mat;
+@use 'lib/button-toggle-group/button-toggle-group-theme';
+@use 'lib/drilldown-list/drilldown-list-theme';
+
+@mixin theme($theme-or-color-config) {
+  $theme: mat.private-legacy-get-theme($theme-or-color-config);
+  @include mat.private-check-duplicate-theme-styles($theme, 'pip-webui-buttons') {
+    @include button-toggle-group-theme.theme($theme-or-color-config);
+    @include drilldown-list-theme.theme($theme-or-color-config);
+  }
+}
+

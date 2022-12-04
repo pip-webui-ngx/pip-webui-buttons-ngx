@@ -7,17 +7,15 @@ import { FabSpeedDialExampleComponent } from './fab-speed-dial-example/fab-speed
 import { ToggleButtonsExampleComponent } from './toggle-buttons-example/toggle-buttons-example.component';
 
 const appRoutes: Routes = [
-    { path: 'drilldown_list', component: DrilldownListExampleComponent },
-    { path: 'action_list', component: ActionListExampleComponent },
-    { path: 'toggle_buttons', component: ToggleButtonsExampleComponent },
-    { path: 'fab_speed_dial', component: FabSpeedDialExampleComponent },
-    { path: '', pathMatch: 'full', redirectTo: 'drilldown_list' }
+  { path: 'drilldown_list', component: DrilldownListExampleComponent },
+  { path: 'action_list', component: ActionListExampleComponent },
+  { path: 'toggle_buttons', component: ToggleButtonsExampleComponent },
+  { path: 'fab_speed_dial', component: FabSpeedDialExampleComponent },
+  { path: '', pathMatch: 'full', redirectTo: 'drilldown_list' },
 ];
 
 @NgModule({
-    imports: [
-        RouterModule.forRoot(appRoutes)
-    ],
-    exports: [RouterModule]
+  imports: [RouterModule.forRoot(appRoutes)],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

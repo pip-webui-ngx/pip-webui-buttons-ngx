@@ -19,9 +19,7 @@ import { ToggleButtonsExampleModule } from './toggle-buttons-example/toggle-butt
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
+      declarations: [AppComponent],
       imports: [
         NoopAnimationsModule,
         FlexLayoutModule,
@@ -38,7 +36,7 @@ describe('AppComponent', () => {
         ExamplesListModule,
         DrilldownListExampleModule,
         FabSpeedDialExampleModule,
-        ToggleButtonsExampleModule
+        ToggleButtonsExampleModule,
       ],
     }).compileComponents();
   }));

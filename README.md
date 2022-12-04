@@ -23,8 +23,8 @@ Example with using angular-material components: mat-button and mat-icon.
 
 **Example on the image**
 
-<a href="https://github.com/pip-webui2/pip-webui2-buttons/raw/master/doc/images/action-list.png" style="display: block; text-align: center;">
-    <img style="max-width: 300px" src="https://github.com/pip-webui2/pip-webui2-buttons/raw/master/doc/images/action-list.png"/>
+<a href="https://github.com/pip-webui2/pip-webui-buttons-ngx/raw/master/doc/images/action-list.png" style="display: block; text-align: center;">
+    <img style="max-width: 300px" src="https://github.com/pip-webui2/pip-webui-buttons-ngx/raw/master/doc/images/action-list.png"/>
 </a>
 
 ### Drilldown list
@@ -59,8 +59,8 @@ Example with using angular-material components: mat-button and mat-icon.
 
 **Example on the image**
 
-<a href="https://github.com/pip-webui2/pip-webui2-buttons/raw/master/doc/images/drilldown-list.png" style="display: block; text-align: center;">
-    <img style="max-width: 300px" src="https://github.com/pip-webui2/pip-webui2-buttons/raw/master/doc/images/drilldown-list.png"/>
+<a href="https://github.com/pip-webui2/pip-webui-buttons-ngx/raw/master/doc/images/drilldown-list.png" style="display: block; text-align: center;">
+    <img style="max-width: 300px" src="https://github.com/pip-webui2/pip-webui-buttons-ngx/raw/master/doc/images/drilldown-list.png"/>
 </a>
 
 ### Toggle buttons
@@ -94,8 +94,8 @@ Example with using angular-material components: mat-button-toggle-group and mat-
 
 **Example on the image**
 
-<a href="https://github.com/pip-webui2/pip-webui2-buttons/raw/master/doc/images/toggle-buttons.png" style="display: block; text-align: center;">
-    <img style="max-width: 300px" src="https://github.com/pip-webui2/pip-webui2-buttons/raw/master/doc/images/toggle-buttons.png"/>
+<a href="https://github.com/pip-webui2/pip-webui-buttons-ngx/raw/master/doc/images/toggle-buttons.png" style="display: block; text-align: center;">
+    <img style="max-width: 300px" src="https://github.com/pip-webui2/pip-webui-buttons-ngx/raw/master/doc/images/toggle-buttons.png"/>
 </a>
 
 ## Installation
@@ -103,7 +103,7 @@ Example with using angular-material components: mat-button-toggle-group and mat-
 To install this module using npm:
 
 ```bash
-npm install pip-webui2-buttons --save
+npm install pip-webui-buttons-ngx --save
 ```
 
 ## <a name="license"></a>License

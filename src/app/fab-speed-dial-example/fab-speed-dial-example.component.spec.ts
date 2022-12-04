@@ -7,7 +7,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { PipFabSpeedDialModule } from 'pip-webui2-buttons';
+import { PipFabSpeedDialModule } from 'pip-webui-buttons-ngx';
 
 import { FabSpeedDialExampleComponent } from './fab-speed-dial-example.component';
 
@@ -29,10 +29,9 @@ describe('FabSpeedDialExampleComponent', () => {
         MatIconModule,
         MatButtonToggleModule,
 
-        PipFabSpeedDialModule
+        PipFabSpeedDialModule,
       ],
-    })
-      .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {

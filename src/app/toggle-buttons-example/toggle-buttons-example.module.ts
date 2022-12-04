@@ -3,19 +3,12 @@ import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatIconModule } from '@angular/material/icon';
-import { PipButtonToggleGroupModule } from 'pip-webui2-buttons';
+import { PipButtonToggleGroupModule } from 'pip-webui-buttons-ngx';
 
 import { ToggleButtonsExampleComponent } from './toggle-buttons-example.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    MatButtonModule,
-    MatIconModule,
-    MatButtonToggleModule,
-
-    PipButtonToggleGroupModule
-  ],
-  declarations: [ToggleButtonsExampleComponent]
+  imports: [CommonModule, MatButtonModule, MatIconModule, MatButtonToggleModule, PipButtonToggleGroupModule],
+  declarations: [ToggleButtonsExampleComponent],
 })
-export class ToggleButtonsExampleModule { }
+export class ToggleButtonsExampleModule {}

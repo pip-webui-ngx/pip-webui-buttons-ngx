@@ -1,0 +1,38 @@
+@use 'sass:map';
+@use 'node_modules/@angular/material' as mat;
+
+@mixin color($config) {
+  $primary: map-get($config, primary);
+  $accent: map-get($config, accent);
+
+  .pip-drilldown-list {
+    .pip-drilldown-list-item.pip-selected {
+      border-left: 5px solid mat.get-color-from-palette($primary) !important;
+    }
+  }
+}
+
+@mixin typography($config-or-theme) {
+}
+
+@mixin _density($config-or-theme) {
+}
+
+@mixin theme($theme-or-color-config) {
+  $theme: mat.private-legacy-get-theme($theme-or-color-config);
+  @include mat.private-check-duplicate-theme-styles($theme, 'pip-webui-buttons-drilldown-list') {
+    $color: mat.get-color-config($theme);
+    $density: mat.get-density-config($theme);
+    $typography: mat.get-typography-config($theme);
+
+    @if $color != null {
+      @include color($color);
+    }
+    @if $density != null {
+      @include _density($density);
+    }
+    @if $typography != null {
+      @include typography($typography);
+    }
+  }
+}

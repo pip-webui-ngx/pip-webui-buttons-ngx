@@ -1,0 +1,48 @@
+@use 'sass:map';
+@use 'node_modules/@angular/material' as mat;
+
+@mixin color($config) {
+  $primary: map-get($config, primary);
+  $accent: map-get($config, accent);
+  $background: map-get($config, background);
+  $foreground: map-get($config, foreground);
+
+  .pip-button-toggle-group mat-button-toggle-group mat-button-toggle {
+    background-color: invert(mat.get-color-from-palette($background, card, 0.054));
+
+    &.mat-button-toggle-checked {
+      background-color: mat.get-color-from-palette($accent);
+      color: invert(mat.get-color-from-palette($foreground, text)) !important;
+    }
+
+    &.mat-button-toggle-disabled {
+      background-color: invert(mat.get-color-from-palette($background, card, 0.027));
+      color: mat.get-color-from-palette($foreground, text, 0.14) !important;
+    }
+  }
+}
+
+@mixin typography($config-or-theme) {
+}
+
+@mixin _density($config-or-theme) {
+}
+
+@mixin theme($theme-or-color-config) {
+  $theme: mat.private-legacy-get-theme($theme-or-color-config);
+  @include mat.private-check-duplicate-theme-styles($theme, 'pip-webui-buttons-button-toggle-group') {
+    $color: mat.get-color-config($theme);
+    $density: mat.get-density-config($theme);
+    $typography: mat.get-typography-config($theme);
+
+    @if $color != null {
+      @include color($color);
+    }
+    @if $density != null {
+      @include _density($density);
+    }
+    @if $typography != null {
+      @include typography($typography);
+    }
+  }
+}

@@ -1,4 +1,4 @@
-<div style="margin-bottom: 16px;">
+<div style="margin-bottom: 16px">
   Direction:
   <mat-radio-group [(ngModel)]="direction" name="direction">
     <mat-radio-button value="up">Up</mat-radio-button>
@@ -7,21 +7,20 @@
     <mat-radio-button value="right">Right</mat-radio-button>
   </mat-radio-group>
 </div>
-<div style="margin-bottom: 16px;">
+<div style="margin-bottom: 16px">
   Animation Mode:
   <mat-radio-group [(ngModel)]="animationMode" name="animationMode">
     <mat-radio-button value="fling">fling</mat-radio-button>
     <mat-radio-button value="scale">scale</mat-radio-button>
   </mat-radio-group>
 </div>
-<div style="margin-bottom: 16px;">
+<div style="margin-bottom: 16px">
   <mat-slide-toggle [(ngModel)]="fixed">Fixed</mat-slide-toggle>
   <mat-slide-toggle [(ngModel)]="spin">Enable Spinning</mat-slide-toggle>
 </div>
 
-
 <div class="container-fab-demo">
-  <mat-card style="margin-bottom: 16px;">
+  <mat-card style="margin-bottom: 16px">
     <mat-card-title>Click me!!</mat-card-title>
     <mat-slide-toggle [(ngModel)]="open">Open</mat-slide-toggle>
     <pip-fab-speed-dial [(open)]="open" [direction]="direction" [animationMode]="animationMode" [fixed]="fixed">
@@ -46,8 +45,14 @@
   </mat-card>
   <mat-card>
     <h2>Hover me!!</h2>
-    <pip-fab-speed-dial #myFab [direction]="direction" [animationMode]="animationMode" [fixed]="fixed" (mouseenter)="myFab.open = true"
-      (mouseleave)="myFab.open = false">
+    <pip-fab-speed-dial
+      #myFab
+      [direction]="direction"
+      [animationMode]="animationMode"
+      [fixed]="fixed"
+      (mouseenter)="myFab.open = true"
+      (mouseleave)="myFab.open = false"
+    >
       <pip-fab-trigger [spin]="spin">
         <button mat-fab>
           <mat-icon>check</mat-icon>

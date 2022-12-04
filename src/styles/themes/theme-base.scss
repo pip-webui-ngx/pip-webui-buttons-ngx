@@ -1,0 +1,13 @@
+@use '../../app/app-theme' as app;
+@use 'node_modules/@angular/material' as mat;
+@use "node_modules/pip-webui-themes-ngx/themes/pip-webui-themes-theme" as pip-webui-themes;
+@use "dist/pip-webui-buttons-ngx/pip-webui-buttons-theme" as pip-webui-buttons;
+
+@include mat.core();
+
+@mixin create-theme($config-or-theme) {
+  @include mat.all-component-themes($config-or-theme);
+  @include pip-webui-themes.theme($config-or-theme);
+  @include pip-webui-buttons.theme($config-or-theme);
+  @include app.theme($config-or-theme);
+}
