@@ -1,6 +1,6 @@
 @use '../../app/app-theme' as app;
 @use 'node_modules/@angular/material' as mat;
-@use "node_modules/pip-webui-themes-ngx/themes/pip-webui-themes-theme" as pip-webui-themes;
+@use "node_modules/pip-webui-themes-ngx/pip-webui-themes-theme" as pip-webui-themes;
 @use "dist/pip-webui-buttons-ngx/pip-webui-buttons-theme" as pip-webui-buttons;
 
 @include mat.core();
